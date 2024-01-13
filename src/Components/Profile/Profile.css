@@ -1,0 +1,137 @@
+.profile__container {
+    width: 20vw;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(232, 232, 232);
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile__info {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile__info__image > img {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.profile__balance {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    height: 40%;
+    margin-bottom: 20px;
+}
+
+.profile__balance > p {
+    color: rgb(144, 144, 144);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile__balance > h3, h1 {
+    font-weight: 900;
+}
+
+.profile__balance > button {
+    background-color: #4935FF;
+    width: 80%;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.profile__recent {
+    text-align: left;
+}
+
+.profile__recent > p:nth-of-type(odd) {
+    color: rgb(144, 144, 144);
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.profile__recent > p:nth-of-type(even) {
+    font-size: 0.88rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile__recent > h3 {
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile__container {
+        width: 100%;
+        background: none;
+        /* justify-content: start; */
+        padding: 0;
+    }
+
+    .profile__info{
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        width: 90%;
+        align-self: flex-start;
+        margin-left: 30px;
+    }
+
+    .profile__info__image img{
+        height: 90px;
+        width: 90px;
+
+    }
+
+    .profile__balance {
+        background: #FAFAFA;
+        border-radius: 30px;
+        width: 80vw;
+        padding: 30px 30px;
+        gap: 10px;
+
+        button{
+            width: 100%;
+            height: 50px;
+        }
+    }
+    .profile__recent{
+        width: 80vw;
+        border-radius: 30px;
+        background: #FAFAFA;
+        padding: 30px 30px;
+        gap: 10px;
+    }
+
+    .profile__balance > button {
+        width: 60%;
+        align-self: center;
+    }
+}

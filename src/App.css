@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+/* .app__sidebar { */
+  /* flex: 1; */
+  /* z-index: 5; */
+/* } */
+
+.app__profile {
+  flex: 2;
+}
+
+.app__portfolio {
+  flex: 3.5;
+}
+
+.app__options {
+  flex: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 100vw;
+    overflow: scroll;
+    border-radius: 30px;
+    overflow: scroll;
+  }
+
+  .app__sidebar {
+    position: absolute;
+    bottom: 0;
+    width: 100vw; 
+    height: 100vh;
+  }
+}
